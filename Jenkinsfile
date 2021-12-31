@@ -58,8 +58,7 @@ pipeline
                 branch 'prod'
             }
             steps{
-                sh 'chmod +x deploy.sh' 
-                sh './deploy.sh'
+                sh 'java -Dserver.port=9090 -jar hello-0.0.1-SNAPSHOT.jar'
             }
         }
 
