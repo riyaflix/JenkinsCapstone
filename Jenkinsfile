@@ -58,7 +58,7 @@ pipeline
                 branch 'prod'
             }
             steps{
-                sh 'nohup java -Dserver.port=9090 -jar target/hello-0.0.1-SNAPSHOT.jar'
+                sh 'nohup java -Dserver.port=9090 -jar target/hello-0.0.1-SNAPSHOT.jar &'
             }
         }
 
