@@ -44,7 +44,7 @@ pipeline
         {
             when
             {
-                expression { BRANCH_NAME ==~ /(development|production)/ }
+                expression { BRANCH_NAME ==~ /(dev|prod)/ }
             }
             steps
             {
@@ -55,7 +55,7 @@ pipeline
         {
             when
             {
-                branch 'production'
+                branch 'prod'
             }
             steps{
                 
