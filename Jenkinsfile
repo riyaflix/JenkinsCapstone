@@ -70,7 +70,7 @@ pipeline
         {
             emailext body:  '''$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS: Check console output and logs at -> $BUILD_URL ''',
             subject: '$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!',
-            to: 'riya@knoldus.com'
+            to: 'riya.for.real@gmail.com'
         }
         success
         {
