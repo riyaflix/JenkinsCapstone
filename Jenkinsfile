@@ -58,7 +58,7 @@ pipeline
                 branch 'prod'
             }
             steps{
-                sh 'java -Dserver.port=9090 -jar target/hello-0.0.1-SNAPSHOT.jar'
+                sh 'java -Dserver.port=9090 -jar target/hello-0.0.1-SNAPSHOT.jar &'
             }
         }
 
