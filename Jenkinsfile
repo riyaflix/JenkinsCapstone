@@ -60,7 +60,7 @@ pipeline
             steps
             {
                 sh 'chmod +x deploy.sh'
-                sh './deploy.sh'
+                sh './deploy.sh &'
             }
         }
 
